@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react"
 import { useSearchParams, useLocation } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 import { Loader } from "components/Loader/Loader";
-import {FilmListEl, StyledNavLink } from "components/TrendingFilms/TrendingFilms.styled";
+import {FilmListEl, StyledNavLink } from "pages/Home.styled";
 import { Button, Input, SearchForm } from "./Movies.styled";
 
 const ERROR_MSG = "Something went wrong with loading films by your query. Try to reload the page!";

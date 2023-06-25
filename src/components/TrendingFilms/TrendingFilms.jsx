@@ -1,7 +1,7 @@
 import { getTrendingFilms } from "helpers/api";
 import { useEffect, useState } from "react";
 import { Loader } from "components/Loader/Loader";
-import {FilmListEl, StyledNavLink } from "./TrendingFilms.styled";
+import {FilmListEl, StyledNavLink } from "../../pages/Home.styled";
 
 const ERROR_MSG = "Something went wrong with loading trending films. Try to reload the page!";
 const EMPTY_MSG = "There is not any information about trending films...";
@@ -46,6 +46,6 @@ export const TrendingFilms = () => {
             </ul>}
             {isEmpty && <p>{EMPTY_MSG}</p>}
             {isLoading && <Loader />}
-         </div>
-    ) 
-}
+        </div>
+    )
+};
